@@ -20,7 +20,7 @@ def find_entire_indx():
             print(sentence)
             return(idxlist)
         else:
-            print("No such letter on the sentence.")
+            print("No such letter in the sentence.")
             continue
 
 print(find_entire_indx())
