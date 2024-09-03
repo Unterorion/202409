@@ -42,5 +42,34 @@ b = SafeCal(4.5, 0)
 print(a.div())
 print(b.div())
 
-c = FourCal(4.5, 0)
-print(c.div())
+#c = PwrCal(4.5, 0)
+#print(c.div())
+
+class inputCal():
+    def __init__(self):
+        self.first = float(input("First input: "))
+        self.second = float(input("Second input: "))
+    
+    def sum(self):
+        return self.first + self.second
+    
+    def sub(self):
+        return self.first - self.second
+    
+    def prod(self):
+        return self.first * self.second
+    
+    def div(self):
+        if self.second==0:
+            return 0
+        else:
+            return self.first / self.second
+        
+    def pwr(self):
+        return self.first**self.second
+
+d = inputCal()
+print("sum = %s" % d.sum())
+print("sub = %s" % d.sub())
+print("product = %s" % d.prod())
+print("div = %s" % d.div())
