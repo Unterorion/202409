@@ -29,7 +29,7 @@ class PwrCal(FourCal):
 a = PwrCal(4.5, 2.8)
 print(a.pwr())
 
-#method overide
+#method override
 class SafeCal(PwrCal):
     def div(self):
         if self.second==0:
