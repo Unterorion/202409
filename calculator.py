@@ -69,7 +69,7 @@ class inputCal():
         return self.first**self.second
 
 d = inputCal()
-print("sum = %s" % d.sum())
+print("sum = %s" % d.sum()) #attribute는 괄호 없고 method는 괄호 있게
 print("sub = %s" % d.sub())
 print("product = %s" % d.prod())
 print("div = %s" % d.div())
